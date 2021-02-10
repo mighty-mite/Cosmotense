@@ -24,15 +24,10 @@
     padding: 0;
 }
 
-.header__right {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
 .header__avatar {
     width: 56px;
     height: 56px;
+    box-sizing: border-box;
     border-radius: 50px;
     background-color: rgba(172, 172, 172, 0.4);
     border: 1px solid rgba(255, 255, 255, 0.5);
@@ -89,9 +84,13 @@
     text-align: center;
 }
 
-            /* MENU  */
+.header__nav-item:hover .header__nav-link {
+  color: $link;
+  }
 
-@media(max-width: 1199px) {
+              /*  SMALL SCREENS   */
+
+@media(max-width: 1439px) {
 
   .header__like {
     display: none;
@@ -164,11 +163,7 @@
   background-color:  rgb(247, 186, 197);
   cursor: pointer;
   }
-  
-  .header__nav-item:hover .header__nav-link {
-  color: $bkg-slider;
-  }
-  
+   
   .header__overlay {
   display: none;
   position: fixed;
@@ -184,27 +179,32 @@
   display: block;
   }
 
+  .header__right {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
 }
 
 
+      /*   TABLET BKG    */
 
-
-@media (min-width: $tablet-width) {
+@media (min-width: 500px) {
   .wrapper {
     background: url("../img/header.jpg") no-repeat 0 0;
     background-size: cover;
   }
 
-  .header {
-    min-height: 108px;
-    padding: 33px 57px 33px 67px;
 }
 
-}
+      /*   BIG SCREENS   */
 
 @media(min-width: $big-desktop-width) {
 
   .header {
+    min-height: 108px;
+    padding: 33px 57px 33px 67px;
+
     display: grid;
     grid-template-areas: 
     "logo navigation cart";
@@ -224,6 +224,18 @@
     grid-area: logo;
   }
 
+ .header__like {
+   &:hover #header__like-svg {
+     fill: $link
+   }
+ }
+
+  .header__right {
+    display: flex;
+    align-items: center;
+    margin-right: 15px
+  }
+
   .header__cart {
     grid-area: cart;
   }
@@ -234,6 +246,7 @@
     background-color: transparent;
     display: flex;
     align-items:center;
+    justify-content: space-between;
 
     grid-area: navigation;
   }
@@ -241,7 +254,6 @@
   .header__nav-list {
     display: flex;
     flex-wrap: wrap;
-    margin-right: 53px;
     width: 700px
   }
 
