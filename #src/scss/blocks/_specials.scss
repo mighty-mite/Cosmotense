@@ -1,0 +1,182 @@
+.special {
+    color: $white;
+}
+
+.special__list-item:first-child {
+    background: url('../img/fragrance@1x.jpg') -155px 0;
+    background-size: cover;
+    grid-area: fragrance;
+}
+
+.special__list-item:nth-child(2) {
+    background: url('../img/gluten@1x.jpg') 0 0 no-repeat;
+    background-size: cover;
+    grid-area: gluten;
+}
+
+.special__list-item:nth-child(3) {
+    background: url('../img/vegan@1x.jpg') 0 0 no-repeat;
+    background-size: cover;
+    grid-area: vegan;
+}
+
+.special__list-item:nth-child(4) {
+    background: url('../img/accessories@1x.jpg') 0 0 no-repeat;
+    background-size: cover;
+    grid-area: accessories;
+}
+
+.special__list-item:nth-child(5) {
+    background: url('../img/paraben@1x.jpg') 0 0 no-repeat;
+    background-size: cover;
+    grid-area: paraben;
+}
+
+.special__list {
+    display: grid;
+    grid-template-areas: 
+    "fragrance"
+    "gluten"
+    "vegan"
+    "accessories"
+    "paraben";
+    grid-template-columns: 1fr;
+    grid-template-rows: 468px;
+    grid-auto-rows: 220px;
+    min-height: 1348px;
+}
+
+.special__list-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.special__list-link {
+    @include transparent-button;
+}
+
+.special__list--main-link {
+    min-height: 68px;
+    font-size: 24px;
+    line-height: 38px;
+    font-weight: 500;
+}
+
+.special__list-link-lc {
+    text-transform: none;
+}
+
+        /*          MEDIA QUERIES FOR RETINA DISPLAYS           */ 
+
+@media(min-resolution: 1.5dppx) {
+
+    .special__list-item:first-child {
+        background: url('../img/fragrance@2x.jpg') -155px 0;
+        background-size: cover
+    }
+    
+    .special__list-item:nth-child(2) {
+        background: url('../img/gluten@2x.jpg') 0 0;
+        background-size: cover
+    }
+    
+    .special__list-item:nth-child(3) {
+        background: url('../img/vegan@2x.jpg') 0 0;
+        background-size: cover
+    }
+    
+    .special__list-item:nth-child(4) {
+        background: url('../img/accessories@2x.jpg') 0 0;
+        background-size: cover
+    }
+    
+    .special__list-item:nth-child(5) {
+        background: url('../img/paraben@2x.jpg') 0 0;
+        background-size: cover
+    }
+}
+
+        /*          MEDIA QUERIES FOR TABLET LAYOUT           */ 
+
+@media(min-width: $tablet-width) {
+
+    .special__list-link {
+        font-size: 14px;
+        line-height: 20px;
+        padding: 10px 15px
+    }
+    
+    .special__list--main-link {
+        min-height: 68px;
+        font-size: 24px;
+        line-height: 38px;
+        font-weight: 500;
+    }
+
+    .special__list {
+        grid-template-areas: 
+        "fragrance gluten accessories"
+        "fragrance vegan paraben";
+        grid-template-columns:  48.6% 25.7% 25.7%;
+        grid-template-rows: 170px 170px;
+        grid-auto-rows: 170px;
+        min-height: 340px;
+    }
+
+    .special__list-item:first-child {
+        background: url('../img/fragrance@1x.jpg') 0 0;
+        background-size: cover;
+        grid-area: fragrance;
+    }
+    
+    .special__list-item:nth-child(2) {
+        background: url('../img/gluten@1x.jpg') 75% 0;
+        background-size: cover;
+        grid-area: gluten;
+    }
+    
+    .special__list-item:nth-child(3) {
+        background: url('../img/vegan@1x.jpg') 75% 0;
+        background-size: cover;
+        grid-area: vegan;
+    }
+    
+    .special__list-item:nth-child(4) {
+        background: url('../img/accessories@1x.jpg') 75% 0;
+        background-size: cover;
+        grid-area: accessories;
+    }
+    
+    .special__list-item:nth-child(5) {
+        background: url('../img/paraben@1x.jpg') 75% 0;
+        background-size: cover;
+        grid-area: paraben;
+    }
+
+}
+
+        /*          MEDIA QUERIES FOR DESKTOP LAYOUT           */ 
+
+@media(min-width: $big-desktop-width) {
+
+    .special__list {
+        grid-template-areas: 
+        "fragrance gluten accessories"
+        "fragrance vegan paraben";
+        grid-template-rows: 220px 220px;
+        grid-auto-rows: 220px;
+    }
+
+    .special__list-link {
+        @include transparent-button;
+    }
+
+    .special__list--main-link {
+        min-height: 122px;
+        padding: 42px 62px;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 38px
+    }
+}

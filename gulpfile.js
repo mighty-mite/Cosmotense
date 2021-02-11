@@ -91,7 +91,7 @@ function css() {
 function images() {
   return src(path.src.img)
     .pipe(webp({
-        quality: 70
+        quality: 90
     })
     )
     .pipe(dest(path.build.img))

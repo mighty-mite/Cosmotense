@@ -34,3 +34,26 @@
         color: $text-dark
     }
 }
+
+@mixin transparent-button {
+    min-height: 54px;
+    box-sizing: border-box;
+    border: 1px solid $white;
+    background: rgba(0, 0, 0, 0.2);
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: $white;
+    padding: 15px 30px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    transition-duration: 300ms;
+    transition-timing-function: linear;
+        &:hover {
+            background:rgba(0, 0, 0, 0.7);
+
+        }
+}
