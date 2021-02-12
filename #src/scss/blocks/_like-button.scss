@@ -1,0 +1,25 @@
+.like-button {
+    position: absolute;
+    top: 9px;
+    border: none;
+    right: 7px;
+    width: 38px;
+    height: 38px;
+    border-radius: 50px;
+    background: rgba(176, 176, 176, 0.46);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+
+}
+
+.like-button:hover .like-button__icon {
+    fill: $link;
+    stroke: $link;
+}
+
+.like-button__icon {
+    transition-duration: 300ms;
+    transition-timing-function: linear;
+}

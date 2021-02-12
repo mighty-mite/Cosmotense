@@ -1,0 +1,117 @@
+.feature__container {
+    padding: 60px 42px 42px 42px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.feature__heading {
+    @include second-heading;
+    box-sizing: border-box;
+    padding: 10px;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.feature__heading-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 348px;
+}
+
+.feature__heading-item {
+    padding-bottom: 10px;
+}
+
+.feature__links {
+    @include text-14-28;
+    display: block;
+    text-transform: capitalize;
+
+    position: relative;
+        &:hover {
+            color: $link;
+
+            &:after {
+                position: absolute;
+                content: "";
+                bottom: -11px; 
+                left: 50%;
+                width: 39px;
+                height: 2px;
+                background-color: $link;
+                transform: translateX(-50%);
+            }
+        }
+}
+
+.feature__card-pic {
+    display: block;
+}
+
+.feature__card-list {
+    margin-top: 60px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.feature__card-link {
+    @include text-20-30;
+    text-transform: capitalize;
+    padding-right: 10px;
+        &:hover {
+            color: $link
+        }
+}
+
+.feature__card-pic {
+    margin-bottom: 14px;
+}
+
+.feature__card:hover .feature__card-link {
+    color: $link
+}
+
+.feature__currency,
+.feature__price {
+    @include text-24-38;
+    font-weight: 500;
+    color: $text-dark;
+}
+
+.feature__card-bottom {
+    margin-top: 14px;
+    display: flex;
+
+}
+
+.feature__card {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 40px;
+    position: relative;
+    width: 270px;
+}
+
+
+@media(min-width: $big-desktop-width) {
+    .feature__container {
+        padding: 30px 30px;
+    }
+    
+    .feature__top {
+        margin-top: 0
+    }
+
+    .feature__card-list {
+        margin-top: 50px;
+    }
+
+    .feature__card {
+        margin-bottom: 0;
+        padding-bottom: 30px;
+        border-bottom: 1px solid lightgrey
+    }
+}

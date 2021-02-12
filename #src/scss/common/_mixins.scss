@@ -8,6 +8,35 @@
     font-style: normal;
     line-height: 38px;
     font-size: 24px;
+    letter-spacing: 0.2px;
+}
+
+@mixin second-heading {
+    font-style: normal;
+    line-height: 36px;
+    font-size: 24px;
+    font-weight: 700;
+    color: $text-dark;
+    text-transform: capitalize;
+    letter-spacing: 0.1px;
+}
+
+@mixin text-14-28 {
+    font-style: normal;
+    line-height: 28px;
+    font-size: 14px;
+    font-weight: 600;
+    color: $link-inactive;
+    letter-spacing: 0.2px;
+}
+
+@mixin text-20-30 {
+    font-style: normal;
+    line-height: 30px;
+    font-size: 20px;
+    font-weight: 400;
+    color: $text-dark;
+    letter-spacing: 0.2px;
 }
 
 @mixin button {
