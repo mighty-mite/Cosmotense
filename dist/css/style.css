@@ -1158,6 +1158,10 @@ th {
     background: rgba(0, 0, 0, 0.7);
   }
 
+  .special__list-link-lc {
+    text-transform: none;
+  }
+
   .special__list--main-link {
     min-height: 122px;
     padding: 42px 62px;
