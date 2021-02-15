@@ -4,6 +4,15 @@
     font-size: 16px;
 }
 
+@mixin text-16-24 {
+    font-style: normal;
+    line-height: 24px;
+    font-size: 16px;
+    font-weight: 700;
+    color: $text-dark;
+    letter-spacing: 0.1px;
+}
+
 @mixin text-24-38 {
     font-style: normal;
     line-height: 38px;

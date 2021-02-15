@@ -1,0 +1,95 @@
+.latest__container {
+    padding: 33px 56px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    box-sizing: border-box
+}
+
+.latest__heading {
+    @include second-heading;
+    padding: 10px;
+    margin-bottom: 60px;
+}
+
+.latest__list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 321px);
+    grid-row-gap: 20px;
+    width: 100%;
+    justify-content: center;
+
+}
+
+.latest__card {
+    position: relative;
+}
+
+.latest__card-link {
+    display: grid;
+    grid-template-rows: 210px minmax(24px, max-content) 28px;
+    grid-row-gap: 10px;
+}
+
+.latest__name {
+    @include text-16-24;
+    text-transform: capitalize;
+    height: 100%
+}
+
+.latest__bottom {
+    @include text-16-28;
+    font-weight: 500;
+    letter-spacing: 0.2px;
+    color: $text-dark;
+    display: flex;
+}
+
+.latest__name {
+    padding-right: 20px;
+}
+
+.latest__card:hover .latest__name {
+    color: $link
+}
+
+.latest__card:hover .latest__bottom {
+    color: $link
+}
+
+.latest__like {
+    top: 9px;
+    right: 7px;
+}
+
+.latest__card:nth-child(5),
+.latest__card:nth-child(6),
+.latest__card:nth-child(7),
+.latest__card:nth-child(8) {
+    display: none
+}
+
+@media(min-width: $big-desktop-width) {
+
+    .latest__card:nth-child(5),
+    .latest__card:nth-child(6),
+    .latest__card:nth-child(7),
+    .latest__card:nth-child(8) {
+        display: block
+    }
+
+    .latest__container {
+        padding: 80px 189px 80px 189px;
+        box-sizing: border-box
+    }
+
+    .latest__heading {
+        margin-bottom: 50px;
+    }
+
+    .latest__list {
+        grid-template-columns: repeat(4, 265px);
+        grid-row-gap: 50px
+    }
+}
