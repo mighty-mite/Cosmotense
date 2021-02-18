@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <!--<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"> -->
+
     <title>Document</title>
 </head>
 <body>
@@ -491,7 +493,82 @@
                 </ul>
             </div>
         </section>
+        <section class="instagram">
+            <h2 class="instagram__heading">Shop on Instagram</h2>
+                        <!-- Slider main container -->
+            <div class="swiper-container">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                  <!-- Slides -->
+                    <div class="swiper-slide">
+                        <picture>
+                            <source srcset="img/inst-1@1x.webp 1x,
+                                            img/inst-1@2x.webp 2x"
+                                    type="image/webp">
+                            <img    class="instagram__pic" 
+                                    src="img/inst-1@1x.jpg"
+                                    srcset="img/inst-1@2x.jpg 2x"
+                                    width="409"
+                                    height="292"
+                                    alt="Nice picture">
+                        </picture>
+                        <a class="instagram__link" href="#">Tv&video</a>
+                    </div>
+                    <div class="swiper-slide">
+                        <picture>
+                            <source srcset="img/inst-2@1x.webp 1x,
+                                            img/inst-2@2x.webp 2x"
+                                    type="image/webp">
+                            <img    class="instagram__pic" 
+                                    src="img/inst-2@1x.jpg"
+                                    srcset="img/inst-2@2x.jpg 2x"
+                                    width="409"
+                                    height="292"
+                                    alt="Nice picture">
+                        </picture>
+                        <a class="instagram__link" href="#">Camera&photo</a>
+                    </div>
+                    <div class="swiper-slide">
+                        <picture>
+                            <source srcset="img/inst-3@1x.webp 1x,
+                                            img/inst-3@2x.webp 2x"
+                                    type="image/webp">
+                            <img    class="instagram__pic" 
+                                    src="img/inst-3@1x.jpg"
+                                    srcset="img/inst-3@2x.jpg 2x"
+                                    width="409"
+                                    height="292"
+                                    alt="Nice picture">
+                        </picture>
+                        <a class="instagram__link" href="#">Bags</a>
+                    </div>
+                    <div class="swiper-slide">
+                        <picture>
+                            <source srcset="img/inst-4@1x.webp 1x,
+                                            img/inst-4@2x.webp 2x"
+                                    type="image/webp">
+                            <img    class="instagram__pic" 
+                                    src="img/inst-4@1x.jpg"
+                                    srcset="img/inst-4@2x.jpg 2x"
+                                    width="409"
+                                    height="292"
+                                    alt="Nice picture">
+                        </picture>
+                        <a class="instagram__link" href="#">Computers</a>
+                    </div>
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+            
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            
+            </div>
+        </section>
     </main>
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
     <script src="js/script.js"></script>
+    <script src="js/swiper-custom.js"></script>
 </body>
 </html>
