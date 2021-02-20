@@ -1392,7 +1392,6 @@ th {
 .instagram {
   background-color: #313958;
   padding: 58px 12px 67px 12px;
-  min-height: 697px;
   box-sizing: border-box;
 }
 
@@ -2431,7 +2430,6 @@ button.swiper-pagination-bullet {
 
   .instagram {
     padding: 46px 0 49px 0;
-    min-height: 566px;
   }
 
   .instagram__heading {
@@ -2596,9 +2594,7 @@ button.swiper-pagination-bullet {
         -ms-flex-direction: column;
             flex-direction: column;
   }
-}
 
-@media (max-width: 1339px) {
   .swiper-button-prev,
   .swiper-button-next {
     display: none;
