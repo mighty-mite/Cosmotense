@@ -204,6 +204,14 @@
   left: 620px;
 }
 
+.swiper-button-prev:hover:after {
+  border-color: $themeColor;
+}
+
+.swiper-button-next:hover:after {
+  border-color: $themeColor;
+}
+
 .swiper-button-next,
 .swiper-container-rtl .swiper-button-prev {
   &:after {

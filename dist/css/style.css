@@ -1730,6 +1730,14 @@ th {
           transform: rotate(45deg) translateX(1.5px) translateY(-1.5px);
 }
 
+.swiper-button-prev:hover:after {
+  border-color: #48AAFF;
+}
+
+.swiper-button-next:hover:after {
+  border-color: #48AAFF;
+}
+
 .swiper-button-next,
 .swiper-container-rtl .swiper-button-prev {
   right: 620px;
@@ -2084,6 +2092,18 @@ button.swiper-pagination-bullet {
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+.footer__social-link:hover .footer__twitter {
+  fill: #1DA1F2;
+}
+
+.footer__social-link:hover .footer__facebook {
+  fill: #3b5998;
+}
+
+.footer__social-link:hover .footer__linkedin {
+  fill: #0e76a8;
 }
 
 @media (min-width: 500px) {
